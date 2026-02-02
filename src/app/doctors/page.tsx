@@ -1,8 +1,26 @@
-﻿import { ArrowRight, Award, GraduationCap, Heart, Linkedin, Mail } from 'lucide-react'
+﻿import { ArrowRight, Award, GraduationCap, Heart, Linkedin, Mail, Star } from 'lucide-react'
 import Button from '@/components/ui/Button'
 import Card from '@/components/ui/Card'
 import Section from '@/components/ui/Section'
 import SectionHeader from '@/components/ui/SectionHeader'
+
+const founderDoctor = {
+  name: 'Prof. Dr. Mohamed M. Dohiem',
+  role: 'Founder & CEO',
+  specialty: 'Prosthodontics & Implantology',
+  image: '/doctors/main_doctor_2.avif',
+  bio: 'Prof. Dr. Mohamed M. Dohiem is the visionary founder and CEO of Arty Dental Clinic. As a leading consultant in Prosthodontics and Implantology, he brings world-class expertise and international standards to every patient interaction. His commitment to excellence and innovation has established Arty Dental as a premier destination for advanced dental care.',
+  education: [
+    'Consultant in Prosthodontics & Implantology',
+    'Lecturer of Prosthodontics & Implantology, FUE',
+    'Member, German Society of Oral Implantology (DGOI)',
+    'Member, International Congress of Oral Implantologists (ICOI)',
+  ],
+  awards: [
+    'DGOI Member',
+    'ICOI Member',
+  ],
+}
 
 const doctors = [
   {
@@ -18,7 +36,7 @@ const doctors = [
     ],
     awards: [
       'International Training',
-      'Patient Education Advocate',
+      'Patient Education',
     ],
   },
   {
@@ -56,21 +74,9 @@ const doctors = [
 ]
 
 const values = [
-  {
-    icon: Heart,
-    title: 'Patient-First Care',
-    description: 'Every decision we make puts our patients\u0027 comfort and well-being first.',
-  },
-  {
-    icon: Award,
-    title: 'Clinical Excellence',
-    description: 'Our team stays at the forefront of dental technology and techniques.',
-  },
-  {
-    icon: GraduationCap,
-    title: 'Continuous Learning',
-    description: 'We invest in ongoing education to provide the best possible care.',
-  },
+  { icon: Heart, title: 'Patient-First Care', description: 'Every decision we make puts our patients\u0027 comfort and well-being first.' },
+  { icon: Award, title: 'Clinical Excellence', description: 'Our team stays at the forefront of dental technology and techniques.' },
+  { icon: GraduationCap, title: 'Continuous Learning', description: 'We invest in ongoing education to provide the best possible care.' },
 ]
 
 export default function DoctorsPage() {
@@ -86,7 +92,45 @@ export default function DoctorsPage() {
           </div>
         </div>
       </section>
-      <Section background="white" padding="md">
+
+      {/* Founder Section */}
+      <Section background="white" padding="lg">
+        <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="relative">
+            <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+              <img src={founderDoctor.image} alt={founderDoctor.name} className="w-full h-[500px] object-cover object-top" />
+              <div className="absolute inset-0 bg-gradient-to-t from-navy-900/60 via-transparent to-transparent" />
+            </div>
+            <div className="absolute -bottom-6 -right-6 w-full h-full bg-accent-teal rounded-3xl -z-10" />
+            <div className="absolute top-6 left-6 bg-white px-4 py-2 rounded-full shadow-lg">
+              <div className="flex items-center gap-2">
+                <Star className="w-5 h-5 fill-accent-gold text-accent-gold" />
+                <span className="font-semibold text-navy-800">Founder & CEO</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <span className="inline-block px-4 py-1.5 bg-accent-gold/10 text-accent-gold text-sm font-medium rounded-full mb-4">{founderDoctor.specialty}</span>
+            <h2 className="text-display-sm text-navy-900 mb-2">{founderDoctor.name}</h2>
+            <p className="text-accent-teal font-semibold text-lg mb-6">{founderDoctor.role}</p>
+            <p className="text-navy-600 leading-relaxed mb-8">{founderDoctor.bio}</p>
+            <div className="mb-6">
+              <h4 className="text-sm font-semibold text-navy-800 mb-3 flex items-center gap-2">
+                <GraduationCap className="w-5 h-5 text-accent-teal" />
+                Credentials & Memberships
+              </h4>
+              <ul className="space-y-2">
+                {founderDoctor.education.map((edu) => (<li key={edu} className="text-navy-600 flex items-start gap-2"><span className="w-1.5 h-1.5 bg-accent-teal rounded-full mt-2 flex-shrink-0" />{edu}</li>))}
+              </ul>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              {founderDoctor.awards.map((award) => (<span key={award} className="inline-flex items-center gap-1 px-4 py-2 bg-accent-gold/10 text-accent-gold text-sm font-medium rounded-full"><Award className="w-4 h-4" />{award}</span>))}
+            </div>
+          </div>
+        </div>
+      </Section>
+
+      <Section background="light" padding="md">
         <div className="grid md:grid-cols-3 gap-8">
           {values.map((value, index) => (
             <Card key={value.title} className={`text-center animate-slide-up stagger-${index + 1}`}>
@@ -99,8 +143,9 @@ export default function DoctorsPage() {
           ))}
         </div>
       </Section>
-      <Section background="light">
-        <SectionHeader label="The Team" title="Dedicated Professionals" description="Get to know the dental experts who will care for your smile." />
+
+      <Section background="white">
+        <SectionHeader label="The Team" title="Our Specialist Dentists" description="Get to know the dental experts who will care for your smile." />
         <div className="grid lg:grid-cols-3 gap-8">
           {doctors.map((doctor, index) => (
             <Card key={doctor.name} padding="none" className={`overflow-hidden animate-slide-up stagger-${index + 1}`}>
@@ -131,6 +176,7 @@ export default function DoctorsPage() {
           ))}
         </div>
       </Section>
+
       <Section background="navy">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-display-md text-white mb-6">Ready to Meet Our Team?</h2>

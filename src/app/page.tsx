@@ -19,14 +19,14 @@ const services = [
 
 const testimonials = [
   { name: 'Sarah Mitchell', role: 'Patient since 2019', content: 'The team at Arty Dental made me feel so comfortable. I used to dread dental visits, but now I actually look forward to them!', rating: 5 },
-  { name: 'Michael Chen', role: 'Patient since 2020', content: 'Professional, friendly, and thorough. Dr. Moussa explained everything clearly and made sure I understood my treatment options.', rating: 5 },
-  { name: 'Emily Rodriguez', role: 'Patient since 2021', content: 'Best dental experience I have ever had. The office is beautiful, the staff is wonderful, and my smile has never looked better!', rating: 5 },
+  { name: 'Ahmed Hassan', role: 'Patient since 2020', content: 'Professional, friendly, and thorough. Prof. Dr. Dohiem explained everything clearly and made sure I understood my treatment options.', rating: 5 },
+  { name: 'Nour El-Din', role: 'Patient since 2021', content: 'Best dental experience I have ever had. The clinic is beautiful, the staff is wonderful, and my smile has never looked better!', rating: 5 },
 ]
 
 const stats = [
   { value: '15+', label: 'Years Experience' },
   { value: '10K+', label: 'Happy Patients' },
-  { value: '3', label: 'Expert Dentists' },
+  { value: '4', label: 'Expert Dentists' },
   { value: '99%', label: 'Satisfaction Rate' },
 ]
 
@@ -64,8 +64,12 @@ export default function HomePage() {
             <div className="relative animate-slide-up stagger-2">
               <div className="relative z-10">
                 <div className="relative rounded-4xl overflow-hidden shadow-2xl">
-                  <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=800&h=900&fit=crop" alt="Modern dental clinic" className="w-full h-[500px] lg:h-[600px] object-cover" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-navy-900/30 to-transparent" />
+                  <img src="/doctors/main_doctor_1.avif" alt="Prof. Dr. Mohamed M. Dohiem - Founder of Arty Dental Clinic" className="w-full h-[500px] lg:h-[600px] object-cover object-top" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-navy-900/50 to-transparent" />
+                  <div className="absolute bottom-6 left-6 right-6">
+                    <p className="text-white font-display text-xl font-semibold">Prof. Dr. Mohamed M. Dohiem</p>
+                    <p className="text-white/80 text-sm">Founder & CEO | Prosthodontics & Implantology</p>
+                  </div>
                 </div>
                 <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-3xl shadow-xl animate-float">
                   <div className="flex items-center gap-4">
@@ -73,8 +77,8 @@ export default function HomePage() {
                       <CheckCircle2 className="w-7 h-7 text-accent-teal" />
                     </div>
                     <div>
-                      <p className="font-semibold text-navy-800">100% Satisfaction</p>
-                      <p className="text-sm text-navy-500">Guaranteed Results</p>
+                      <p className="font-semibold text-navy-800">DGOI & ICOI Member</p>
+                      <p className="text-sm text-navy-500">International Standards</p>
                     </div>
                   </div>
                 </div>
