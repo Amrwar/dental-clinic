@@ -6,51 +6,51 @@ import SectionHeader from '@/components/ui/SectionHeader'
 
 const doctors = [
   {
-    name: 'Dr. Salwa Naguib',
-    role: 'Lead Dentist & Founder',
-    specialty: 'Cosmetic Dentistry',
-    image: '/doctors/Dr__Salwa_Naguib.avif',
-    bio: 'With over 20 years of experience, Dr. Salwa Naguib founded Bright Smile Dental with a vision of providing exceptional, patient-centered care. She specializes in smile makeovers and advanced cosmetic procedures, helping patients achieve their dream smiles.',
+    name: 'Dr. Mohammed E. Moussa',
+    role: 'Content Director & General Dentist',
+    specialty: 'General Dentistry',
+    image: '/doctors/doc_mohammed_EMoussa.avif',
+    bio: 'Dr. Mohammed E. Moussa leads Arty Dental Clinic with a commitment to excellence and patient education. With international training and a dedication to staying current with the latest dental advancements, he provides comprehensive general dentistry services with a focus on preventive care and patient comfort.',
     education: [
-      'DDS, Cairo University',
-      'Fellowship in Cosmetic Dentistry',
-      'Member, Egyptian Dental Association',
+      'National Dental Examining Board of Canada Candidate',
+      'Continuing Education, Harvard Medical School',
+      'General Dentistry Practice',
     ],
     awards: [
-      'Excellence in Dentistry 2023',
-      'Best Cosmetic Dentist',
+      'International Training',
+      'Patient Education Advocate',
     ],
   },
   {
     name: 'Dr. Maie Magdy',
-    role: 'Senior Dentist',
-    specialty: 'Orthodontics & Pediatric Care',
+    role: 'Endodontics Specialist',
+    specialty: 'Root Canal Treatment',
     image: '/doctors/Dr__Maie_Magdy.avif',
-    bio: 'Dr. Maie Magdy brings warmth and expertise to every patient interaction. Specializing in orthodontics and pediatric dentistry, she creates a comfortable environment for patients of all ages, with a particular passion for helping children develop healthy dental habits.',
+    bio: 'Dr. Maie Magdy is a skilled Endodontics Specialist dedicated to saving teeth through expert root canal therapy. As an Assistant Lecturer at Future University in Egypt, she combines clinical excellence with academic knowledge, ensuring patients receive the most advanced and pain-free endodontic treatments available.',
     education: [
-      'BDS, Ain Shams University',
-      'MSc in Orthodontics',
-      'Certified Invisalign Provider',
+      'Endodontics Specialist',
+      'Asst. Lecturer of Endodontics, FUE',
+      'Advanced Root Canal Techniques',
     ],
     awards: [
-      'Patient Choice Award 2022',
-      'Top Orthodontist',
+      'Academic Excellence',
+      'Pain-Free Treatment',
     ],
   },
   {
-    name: 'Dr. Mohammed E. Moussa',
-    role: 'Oral Surgeon',
-    specialty: 'Dental Implants & Oral Surgery',
-    image: '/doctors/doc_mohammed_EMoussa.avif',
-    bio: 'Dr. Mohammed E. Moussa is an expert in oral surgery and dental implantology. With precision and care, he performs complex procedures including implants, extractions, and bone grafting, ensuring optimal outcomes for every patient.',
+    name: 'Dr. Salwa Naguib',
+    role: 'Pedodontics Specialist',
+    specialty: 'Children Dentistry',
+    image: '/doctors/Dr__Salwa_Naguib.avif',
+    bio: 'Dr. Salwa Naguib specializes in pediatric dentistry, creating positive dental experiences for children of all ages. With a gentle approach and child-friendly techniques, she helps young patients develop healthy dental habits that last a lifetime, making every visit comfortable and even fun.',
     education: [
-      'BDS, Alexandria University',
-      'MSc in Oral Surgery',
-      'Fellow, International Congress of Oral Implantologists',
+      'Pedodontics Specialist',
+      'Child Psychology in Dentistry',
+      'Preventive Pediatric Care',
     ],
     awards: [
-      'Excellence in Implantology',
-      'Advanced Surgical Skills',
+      'Child-Friendly Care',
+      'Gentle Approach',
     ],
   },
 ]
@@ -134,7 +134,7 @@ export default function DoctorsPage() {
       <Section background="navy">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-display-md text-white mb-6">Ready to Meet Our Team?</h2>
-          <p className="text-body-lg text-navy-200 mb-8">Schedule your appointment today and experience the Bright Smile difference. Our friendly team is ready to welcome you.</p>
+          <p className="text-body-lg text-navy-200 mb-8">Schedule your appointment today and experience the Arty Dental difference. Our friendly team is ready to welcome you.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button href="/contact" variant="secondary" size="lg">Book Appointment<ArrowRight className="w-5 h-5" /></Button>
             <Button href="/services" variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-navy-800">View Our Services</Button>
