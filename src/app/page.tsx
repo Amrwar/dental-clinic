@@ -7,7 +7,7 @@ import SectionHeader from '@/components/ui/SectionHeader'
 const features = [
   { icon: Shield, title: 'Safe & Sterile', description: 'State-of-the-art sterilization and safety protocols' },
   { icon: Heart, title: 'Gentle Care', description: 'Compassionate treatment for anxious patients' },
-  { icon: Clock, title: 'Flexible Hours', description: 'Evening and weekend appointments available' },
+  { icon: Clock, title: 'Evening Hours', description: 'Open 5 PM - 10 PM, Saturday to Thursday' },
   { icon: Users, title: 'Family Friendly', description: 'Welcoming patients of all ages' },
 ]
 
@@ -155,7 +155,7 @@ export default function HomePage() {
           <p className="text-body-lg text-navy-600 mb-8 max-w-2xl mx-auto">Schedule your appointment today and take the first step towards the smile you have always wanted. New patients receive a complimentary consultation.</p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Button href="/contact" size="lg">Schedule Appointment<ArrowRight className="w-5 h-5" /></Button>
-            <Button href="tel:+1234567890" variant="outline" size="lg">Call (123) 456-7890</Button>
+            <Button href="tel:+201003843828" variant="outline" size="lg">Call +20 100 384 3828</Button>
           </div>
         </div>
       </Section>

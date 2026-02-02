@@ -82,28 +82,27 @@ export default function Footer() {
               <li>
                 <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 text-navy-300 hover:text-white transition-colors group">
                   <MapPin className="w-5 h-5 mt-0.5 text-accent-teal flex-shrink-0" />
-                  <span>123 Smile Avenue, Suite 200<br />Cairo, Egypt</span>
+                  <span>Cairo, Egypt</span>
                 </a>
               </li>
               <li>
-                <a href="tel:+1234567890" className="flex items-center gap-3 text-navy-300 hover:text-white transition-colors">
+                <a href="tel:+201003843828" className="flex items-center gap-3 text-navy-300 hover:text-white transition-colors">
                   <Phone className="w-5 h-5 text-accent-teal flex-shrink-0" />
-                  <span>(123) 456-7890</span>
+                  <span>+20 100 384 3828</span>
                 </a>
               </li>
               <li>
-                <a href="mailto:hello@artydental.com" className="flex items-center gap-3 text-navy-300 hover:text-white transition-colors">
+                <a href="mailto:artydentalclinic@gmail.com" className="flex items-center gap-3 text-navy-300 hover:text-white transition-colors">
                   <Mail className="w-5 h-5 text-accent-teal flex-shrink-0" />
-                  <span>hello@artydental.com</span>
+                  <span>artydentalclinic@gmail.com</span>
                 </a>
               </li>
               <li>
                 <div className="flex items-start gap-3 text-navy-300">
                   <Clock className="w-5 h-5 mt-0.5 text-accent-teal flex-shrink-0" />
                   <div>
-                    <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
-                    <p>Sat: 9:00 AM - 4:00 PM</p>
-                    <p>Sun: Closed</p>
+                    <p>Sat - Thu: 5 PM - 10 PM</p>
+                    <p>Friday: Closed</p>
                   </div>
                 </div>
               </li>

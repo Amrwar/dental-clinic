@@ -52,9 +52,9 @@ export default function Navbar() {
             ))}
           </div>
           <div className="hidden lg:flex items-center gap-4">
-            <a href="tel:+1234567890" className="flex items-center gap-2 text-navy-600 hover:text-navy-800 transition-colors">
+            <a href="tel:+201003843828" className="flex items-center gap-2 text-navy-600 hover:text-navy-800 transition-colors">
               <Phone className="w-4 h-4" />
-              <span className="font-medium">(123) 456-7890</span>
+              <span className="font-medium">+20 100 384 3828</span>
             </a>
             <Button href="/contact">Book Appointment</Button>
           </div>
@@ -71,9 +71,9 @@ export default function Navbar() {
                 ))}
               </div>
               <div className="mt-6 pt-6 border-t border-navy-100">
-                <a href="tel:+1234567890" className="flex items-center gap-3 px-4 py-3 text-navy-600">
+                <a href="tel:+201003843828" className="flex items-center gap-3 px-4 py-3 text-navy-600">
                   <Phone className="w-5 h-5" />
-                  <span className="font-medium">(123) 456-7890</span>
+                  <span className="font-medium">+20 100 384 3828</span>
                 </a>
                 <div className="mt-4">
                   <Button href="/contact" fullWidth>Book Appointment</Button>
