@@ -1,12 +1,12 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import './globals.css'
 import Navbar from '@/components/layout/Navbar'
 import Footer from '@/components/layout/Footer'
 
 export const metadata: Metadata = {
-  title: 'Bright Smile Dental | Premium Dental Care',
+  title: 'Arty Dental Clinic | Premium Dental Care',
   description: 'Experience exceptional dental care with our team of expert dentists. Modern technology, gentle care, and beautiful smiles.',
-  keywords: 'dental clinic, dentist, dental care, teeth whitening, dental implants, cosmetic dentistry',
+  keywords: 'dental clinic, dentist, dental care, teeth whitening, dental implants, cosmetic dentistry, root canal, pediatric dentistry',
 }
 
 export default function RootLayout({
